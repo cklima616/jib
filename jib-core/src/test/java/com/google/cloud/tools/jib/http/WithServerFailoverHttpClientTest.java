@@ -162,7 +162,8 @@ public class WithServerFailoverHttpClientTest {
       ignored2.close();
     } finally {
       httpClient.shutDown();
-      httpClient.shutDown(); // test should complete with no error
+      httpClient.shutDown();
+      // TODO: test failed
     }
   }
 
